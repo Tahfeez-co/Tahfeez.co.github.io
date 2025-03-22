@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1> شـركـة تحفـيـز</h1>
+<br>
+<br>
+    <h1>اهلا بكم في <u>شركة تحفيز</u> العريقة والممتازة  والقوية بإذن الله  </h1>
+       <font size="5" > <p  > <u> شركة ريادة </u>  أعمال   التطوير والتصميم الرقمي والإعلام الرقمي
+             للفنون التفاعلية وخبراء الذكاء الاصطناعي </p>
+            </font>
+   
+   <h1><u>Tahfeez Cpmpany</u></h1>
+         <p> Entrepreneurship Company for development, digital design and digital media 
+           for interactive arts and artificial intelligence experts</p>
+   <br>
+   <br>
+   
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+          
+   <hr>
+   
+   <br>
+   <br>
+   <br>
+    <h1>مرحبًا <span id="userEmail"></span>!</h1>
+
+    <script>
+        // عرض البريد الإلكتروني للمستخدم
+        const savedEmail = localStorage.getItem('userEmail');
+        document.getElementById('userEmail').textContent = savedEmail;
+
+        // وظيفة تسجيل الخروج
+        function logout() {
+            localStorage.removeItem('userEmail');
+            localStorage.removeItem('userPassword');
+            window.location.href = 'login.html';
+        }
+    </script>
+   
+      
+   
+      <details><summary align="right" dir="rtl">  من خصائص شركتنا:-</summary>
+        <ol align="right" type="1" dir="rtl"> 
+           <li>الخبرة</li>
+               <li>المهارة</li>
+                   <li>السرعة</li> 
+                 </ol>
+   
+           <ul align="right" dir="auto">
+               <li>سرعة</li> 
+             <li>اداء</li>
+           </ul>
+       </details> 
+       <br>
+       <br>
+       
+   <details align="right" dir="rtl"> <summary> من مميزاتنا</summary>
+         <ol align="right" dir="auto" type="1">
+         <li>سرعة التجهيز</li>
+         <li>الدقة بالمجال المطلوب</li>
+         <li>الصدق بالتعامل</li>
+         </ol>
+   </details>
+   
+  
+        <button onclick="logout()">تسجيل الخروج</button>
+
+   
+</body>
+</html>
