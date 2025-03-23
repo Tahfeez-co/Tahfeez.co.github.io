@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>CRUDS</title>
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -13,16 +15,16 @@
         </div>
 
         <div class="inputs">
-            <input placeholder="title" type="text" id="titlle">
+            <input type="text" id="title" placeholder="title">
             <div class="price">
-                            <input type="number" placeholder="price" id="price">
-                            <input type="number" placeholder="text"id="text">
-                            <input type="number"placeholder="ads" id="ads">
-                            <input type="number" placeholder="discount"id="discount">
-                            <small id="total">12345</small>
+                            <input onkeyup="getTotal()" type="number" id="price" placeholder="price" >
+                            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" >
+                            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads" >
+                            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                            <small id="total">:</small>
                         
                         </div>
-           <input placeholder="count" type="text" id="count">
+           <input placeholder="count" type="number" id="count">
            <input placeholder="category" type="text" id="category">
            <button id="submit">creat</button>
         
@@ -43,14 +45,14 @@
             <table>
                 <tr>
                     <th>id</th>
-                    <th>digital artist</th>
-                    <th>digital media</th>
-                    <th>AI artist</th>
-                    <th>digital develop</th>
-                    <th>ads</th>
-                    <th>total</th>
-                    <th>update</th>
-                    <th>delete</th>
+                    <th>TITLE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
                 </tr>
                 <tbody>
                     <tr>
@@ -104,7 +106,11 @@
         
     </div>
     
-
+<script src="main.js"></script>
+<div class="linktt">
+    <a href="index.html">العودة الى الصفحة السابفة</a>
+</div>
+<input type="button" id="linktt" placeholder="العودة" >
 
 </body>
 
