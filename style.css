@@ -113,6 +113,15 @@ button{
     border-radius: 20px;
 
 }
+.linktt{
+    color: #f6fa13;
+    border: #ec1fc0;
+    cursor: alias;
+    display: inline-grid;
+    width: 50%;
+    background-color: #3cc421;
+
+}
 button:hover{
     background-color: #ec1fc0;
     letter-spacing: 2px;
